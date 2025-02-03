@@ -7,40 +7,169 @@
 
     <style type="text/css">
 
+    @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+        * {
+            margin:0;
+            padding: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: 16px;
+            background-color: rgb(197, 195, 195);
+            margin: 3.5em 1em 0 1em;
+            border: 0.3em double black;
+            border-radius: 20px;
+            font-family: "Smooch Sans";  
+            text-align: center;          
+        }
+
+        .specialist{
+            margin-bottom: 0.5em;
+        }
+
+        .background {
+            background-color: white;
+            border-radius:18px;
+
+        }
+
+        .menu li{
+            display: inline-block;
+
+            padding: 5px 10px;
+            margin: 15px 15px;
+
+            list-style-type: none;
+            align-items: center;
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .menu li a:hover {
+            color: tomato;
+        }
+    
+
+        .active{
+            text-decoration: none;
+            color: tomato;
+            font-weight: 600;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 2.3em;
+            font-weight: 400;
+        }
+
+        hr {
+            border: 0;
+            clear:both;
+            display:block;
+            width: 96%;               
+            background-color:black;
+            height: 1px;
+        }
+
+        .menu-before{
+            height: 0.2em;
+        }
+
+        img{
+            padding:0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            box-sizing: content-box;
+        }
+
+        span{
+            font-weight: 600;
+        }
+
+        header{
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+
+        .info p {
+            text-align: center;
+        }
+
+        .info a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .info a:active{
+            color: tomato;
+        }
+
+        footer{
+            margin-top: 2em;
+            padding-bottom: 2em;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        
+
+
+
+    
     </style>
 </head>
 <body>
-    <h1>The <span class="bold-title">Analog</span> Specialist</h1>
+    <section class="background">
+        <h1 class="about">
+            <h1>The </h1> 
+            <h1><span class="bold-title">Analog</span></h1> 
+            <h1 class="specialist">Specialist</h1>
 
-    <nav>
-        <ul>
-            <hr>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="forsale.html">For Sale</a></li>
-            <li><a href="#">Repairs</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <hr>
-        </ul>    
-    </nav>
+        <nav class="menu">
+            <ul>
+                <hr class="menu-before">
 
-    <main>
-        <section>
-          
-            <img src="../box_model/2-exercicio-box-model-inicio/exercicio-box-model-inicio/images/clavinet.jpg" alt="Picture of a Clavinet">
-            <img src="../box_model/2-exercicio-box-model-inicio/exercicio-box-model-inicio/images/rhodes.jpg" alt="Picture of a Rhodes">
-            <img src="../box_model/2-exercicio-box-model-inicio/exercicio-box-model-inicio/images/rhodes.jpg" alt="Picture of a Rhodes">
-            
-        </section>
-    </main>
+                <li class="active">Home</a></li>
+                <li><a href="forsale.html">For Sale</a></li>
+                <li><a href="#">Repairs</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <hr class="menu-after">
+            </ul>    
+        </nav>
 
-    <p> We specialize in the sale and repair of classic keyboards, in particular the <a href="https://rhodesmusic.com/?srsltid=AfmBOorybLxugNtuGu6ZqUMkAKwXwPqZzeitikU9H_GKroKLa3w-j7f-" target="_blank">"Fender Rhodes"</a>, "Wurlitzer EP200", and Hohner Clavinet</p>
+        <main>
+            <header>
+                        <img src="../box_model/images/clavinet.jpg" alt="Picture of a Clavinet">
 
-    <hr>
+                        <img src="../box_model/images/rhodes.jpg" alt="Picture of a Rhodes">
+                
 
-    <footer>
-        &copy;2025, Mariana Alves
-    </footer>
+                        <img src="../box_model/images/wurlitzer.jpg" alt="Picture of a Wurlitzer">
+                  
+            </header>
+        </main>
+
+        <article>
+            <p class="info"> We specialize in the sale and repair of classic keyboards, in particular the <a href="https://rhodesmusic.com/?srsltid=AfmBOorybLxugNtuGu6ZqUMkAKwXwPqZzeitikU9H_GKroKLa3w-j7f-" target="_blank">"Fender Rhodes"</a>, "Wurlitzer EP200", and Hohner Clavinet</p>
+
+        </article>
+
+        <hr>
+
+        <footer>
+            &copy;2025, Mariana Alves
+        </footer>
+
+   </section>
     
 </body>
 </html>
