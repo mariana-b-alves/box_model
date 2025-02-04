@@ -19,11 +19,6 @@
         body{
             font-size: 16px;
             background-color: rgb(197, 195, 195);
-            margin: 2em .5em 0 .5em;
-            border: 0.3em double black;
-            border-radius: 20px;
-            font-family: "Smooch Sans";  
-            text-align: center;          
         }
 
         .specialist{
@@ -32,10 +27,17 @@
 
         .background {
             padding-top: 1em;
-            background-color: white;
-            border-radius:18px;
             padding-bottom: 3em;
+            margin: 2em .5em 2em .5em;
 
+            background-color: white;
+
+            border: 0.3em double black;
+            border-radius:18px;
+            border-radius: 20px;
+
+            font-family: "Smooch Sans";
+            text-align: center;         
         }
 
         .menu li{
@@ -47,6 +49,8 @@
 
             list-style-type: none;
             align-items: center;
+
+            font-size: 1.05em;
 
         }
 
@@ -76,10 +80,10 @@
         hr {
             border: 0;
             clear:both;
-            display:block;
             width: 96%;               
             background-color:black;
             height: 1px;
+            display: inline-block;
         }
 
         .menu-before{
@@ -90,7 +94,7 @@
             padding:0;
             margin-top: 1em;
             margin-bottom: 1em;
-            box-sizing: content-box;
+            margin-left: -.2em
         }
 
         span{
@@ -120,16 +124,16 @@
             color: tomato;
         }
 
+        .footer-before{
+            margin-top: 1.5em;
+        }
+
         footer{
             margin-top: 2em;
             padding-bottom: 2em;
             text-align: center;
             font-size: 1.3em;
         }
-        
-
-
-
     
     </style>
 </head>
@@ -144,7 +148,7 @@
             <ul>
                 <hr class="menu-before">
 
-                <li class="active">Home</a></li>
+                <li class="active">Home</li>
                 <li><a href="forsale.html">For Sale</a></li>
                 <li><a href="#">Repairs</a></li>
                 <li><a href="#">About</a></li>
@@ -166,11 +170,11 @@
         </main>
 
         <article>
-            <p class="info"> We specialize in the sale and repair of classic keyboards, in particular the <a href="https://rhodesmusic.com/?srsltid=AfmBOorybLxugNtuGu6ZqUMkAKwXwPqZzeitikU9H_GKroKLa3w-j7f-" target="_blank">"Fender Rhodes"</a>, "Wurlitzer EP200", and Hohner Clavinet</p>
+            <p class="info"> We specialise in the sale and repair of classic keyboards, in particular the <a href="https://rhodesmusic.com/?srsltid=AfmBOorybLxugNtuGu6ZqUMkAKwXwPqZzeitikU9H_GKroKLa3w-j7f-" target="_blank">"Fender Rhodes"</a>, "Wurlitzer EP200", and Hohner Clavinet</p>
 
         </article>
 
-        <hr>
+        <hr class="footer-before">
 
         <footer>
             &copy;2025, Mariana Alves
