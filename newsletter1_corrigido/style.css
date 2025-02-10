@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* Mini reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+
+    background-color: lightgray;
+}
+
+main {
+    width: 640px;
+    margin: 15px auto;
+    padding: 20px;
+    text-align: center;
+
+
+    background-color: white;
+
+}
+
+/************* HEADER *************/
+
+header {
+    height: 300px;
+    padding: 65px;
+
+    background: orange url(images/reuniao.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+
+header > * section.contents p{
+    margin: 20px 0;
+}
+
+header h1 {
+    color: orangered;
+    text-shadow: 1px 1px 3px darkgray;
+}
+
+header p {
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 3px darkgrey;
+}
+
+a.btn{
+    display: inline-block;
+    padding: .4em .8em;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px lightgoldenrodyellow;
+
+    background-color: darkorange;
+    color: white;
+
+    text-decoration: none;
+}
+
+/************* CONTENTS  *************/
+
+section.contents{
+    text-align: justify;
+
+}
+
+
+/************* PHOTOS *************/
+
+section.photos{
+    border-top: 2px solid gray;
+    padding: 20px;
+}
+
+section.photos h1{
+    text-transform: uppercase;
+    padding: 2px;
+
+    opacity: .7;
+}
+
+section.photo img.middle{
+    margin: 0 66px;
+}
+
+footer{
+    background-color: darkorange;
+    color: white;
+    padding: 50px;
+}
+
