@@ -1,8 +1,0 @@
-/*************FONTS *************/
-
-@font-face {
-    font-family: Patron-Regular;
-    src: url("../Patron-Regular.woff");
-}
-
-@import url(style.css);
