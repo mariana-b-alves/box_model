@@ -1,0 +1,117 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    color: set-text-color($general-color);
+    background-color: $body-font-color;
+    padding: $padding-divide;
+    font: {
+        family: $font-stack;
+    }
+
+}
+
+section.newsletter{
+    width: 640px;
+    background-color: $general-color;
+    margin: auto;
+    padding: $padding-divide;
+}
+
+header{
+    height: 300px;
+    background-image: url(../images/reuniao.jpg);
+    background-size: cover;
+    color: $body-font-color;
+    padding: 50px 10px;
+    text-align: center;
+
+    & h1{
+        font: {
+            size: 2em;
+        }
+    }
+
+    & a{
+        color:set-text-color($body-font-color);
+        text-decoration: none;
+        width: 100px;
+        height: 50px;
+        background-color:$btn-color;
+        display: block;
+        margin: 50px auto;
+        text-transform: capitalize;
+        border-radius: 8px;
+        box-shadow: 2px 2px 4px $body-font-color;
+        font-size: .8em;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+article.textos{
+    font-size: .8em;
+    border-bottom: 1px solid $body-font-color;
+    padding: $padding-divide 0;
+
+    & p{
+        margin: 10px 0;
+    }
+}
+
+
+article.miniaturas h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: $body-font-color;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+    margin: 20px 0 ;
+}
+
+
+div.imagens{
+    display: flex; 
+    justify-content: space-between;
+}
+
+div img {
+    padding: 2px;
+    border:1px solid $body-font-color;
+    opacity: .7;
+    transition: all 0.3s ease-out;
+
+    &:hover{
+        @include transform(scale(1.2));
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+footer {
+    background-color: $btn-color;
+    color: $general-color;
+    padding: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.imagemFundo{
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
