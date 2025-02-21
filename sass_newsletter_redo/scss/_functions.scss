@@ -6,6 +6,13 @@
     }
 }
 
+@mixin transtion($transition) {
+    -webkit-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
 @mixin transform($property) {
     -webkit-transform: $property;
     -ms-transform: $property;
