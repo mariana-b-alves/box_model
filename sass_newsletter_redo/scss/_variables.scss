@@ -1,6 +1,5 @@
 /*ALL SECTIONS*/
-$general-display: flex;
-$alignment: center;
+$alignment: center; // Includes every justify-item, align-self, and align-items
 
 /*BODY*/
 
@@ -8,8 +7,8 @@ $body-font-color: #333;
 $body-bg-color: #eee;
 $font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-$padding-divide: 20px;
-$padding-large: 50px;
+$padding-margin-divide: 20px;
+$padding-margin-large: 50px;
 
 /*NEWSLETTER SECTION*/
 

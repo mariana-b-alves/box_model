@@ -6,7 +6,7 @@
     }
 }
 
-@mixin transtion($transition) {
+@mixin transition($transition) {
     -webkit-transition: $transition;
     -ms-transition: $transition;
     -o-transition: $transition;
