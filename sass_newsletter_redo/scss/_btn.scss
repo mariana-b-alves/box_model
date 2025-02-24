@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
+
+%btn-a{
+    color:set-text-color($body-font-color);
+    text: {
+        decoration: none;
+        transform: capitalize;
+    }
+    width: 100px;
+    height: $padding-margin-large;
+    background-color:$btn-color;
+    display: block;
+    margin: $padding-margin-large auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px $body-font-color;
+    font-size: .8em;
+
+    display: flex;
+    justify-content: $alignment;
+    align-items: $alignment;
+}
