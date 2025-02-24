@@ -11,12 +11,12 @@
 }
 
 body{
-    font-size: 16px;
     color: set-text-color($general-color);
     background-color: $body-font-color;
     padding: $padding-margin-divide;
     font: {
         family: $font-stack;
+        size: 16px;
     }
 }
 
@@ -57,11 +57,14 @@ article.textos{
 
 article.miniaturas{
     & h2 {
-        text-align: $alignment;
-        text-transform: uppercase;
-        font-family: monospace;
-        font-size: 1.2em;
-        color: $body-font-color;
+        text: {
+            align: $alignment;
+            transform: uppercase;
+        }
+        font: {
+            family: monospace;
+            size: 1.2em;
+        }
         letter-spacing: 0.3em;
         font-weight: normal;
         margin: $padding-margin-divide 0 ;
