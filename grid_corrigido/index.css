@@ -18,11 +18,11 @@ header{
     align-items: center;
 }
 
-main{
+/* main{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 20vh;
-}
+} */
 
 section{
     background-color: rgb(71, 69, 69);
@@ -48,7 +48,7 @@ figure img{
 }
 
 
-.c2xr1{
+/* .c2xr1{
     grid-column: span 2;
 }
 
@@ -65,11 +65,39 @@ figure img{
 
 .c3xr1{
     grid-column: span 3;
-}
+} */
 
 .img-txt{
     display: flex;
     align-items: center;
     padding: 3em;
     gap: 1em;
+}
+
+@media screen and (min-width: 900px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 20vh;
+    }
+
+    .c2xr1{
+        grid-column: span 2;
+    }
+    
+    .c2xr2{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .c3xr2{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    
+
+    .c3xr1{
+        grid-column: span 3;
+    }
+
 }
