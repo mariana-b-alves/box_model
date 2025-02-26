@@ -94,7 +94,7 @@ html, body {
 
 /********"DESKTOP" STYLES***********/
 
-@media screen and (min-width:900px) and (max-width:1200px){
+@media screen and (min-width:900px){
  
   .flex-container{
     display: grid;
